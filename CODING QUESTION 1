@@ -1,0 +1,28 @@
+package quiz2;
+
+import java.util.Scanner;
+
+public class question1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Scanner declaration
+		Scanner sc = new Scanner(System.in);
+		
+		int attendes,totalclass,eligible;
+		
+		System.out.println("Please enter total number of class held :");
+		totalclass=sc.nextInt();
+		System.out.println("Please enter total number of class attend :");
+		attendes=sc.nextInt();
+		
+		eligible=(attendes/totalclass)*100;
+		
+		if (eligible>=75)
+			System.out.println("You are eligible to take sit for an exam");
+		else
+			System.out.println("You are not eligible to take sit for an exam");
+
+	}
+
+}
